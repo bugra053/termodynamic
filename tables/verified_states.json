@@ -125,5 +125,6 @@
       "table": "A-2",
       "pdf_page": 3
     }
-  ]
+  ],
+  "source_priority": "Verified eighth-edition fallback facts. A legible course-designated Cengel table for the same state takes priority; obtain a consistent property set from that edition. Do not alter these source-specific facts without verifying their original page."
 }

@@ -44,9 +44,15 @@ Model isteğinde:
 
 Betik bir modele API çağrısı yapmaz. Model sağlayıcısı ve mevcut uygulama kodu bu repo içinde yapılandırılmamıştır.
 
+## Tablo baskısı ve hassasiyet
+
+Hocanın kullandığı tam tablo baskısı henüz doğrulanmadı. Repodaki 8. baskı değerleri kaynaklarına göre korunur; örneğin A-13, PDF sayfa 24, 800 kPa ve 70 °C için h=306.90 kJ/kg yazıyor. Kullanıcı kendi tablosunda 306.88 gördüğünü bildirdi; ilgili sayfa gelmeden bu değerin hangi baskıdan olduğu doğrulanmış sayılmaz. Soruyla verilen veya ders için belirtilen gerçek Çengel tablosu önceliklidir. Bütün özellikleri aynı kaynak/baskıdan kullan; bir değeri değiştirip kalanını farklı baskıdan alma.
+
 ## 7-Cal Custom Prompt alanına ekleme
 
 Repo public; raw bağlantılar için giriş veya token gerekmez.
+
+**Online tarama için güncel prompt:** [online_prompt.txt raw](https://raw.githubusercontent.com/bugra053/termodynamic/main/online_prompt.txt). Metnin tamamını Content alanına yapıştır; online tarama açık olmalı. Bu sürüm bulanık soru eşleştirmesini ve dersin gerçek Çengel tablosuna öncelik verilmesini içerir.
 
 - **Yalnızca talimatlar:** [system_prompt.txt raw](https://raw.githubusercontent.com/bugra053/termodynamic/main/system_prompt.txt).
 - **Talimat + ders yöntemleri + çıkmışlar + seçili Çengel verileri tek metin:** [calculator_prompt.txt raw](https://raw.githubusercontent.com/bugra053/termodynamic/main/calculator_prompt.txt).

@@ -15,7 +15,10 @@ COURSE MATERIAL
 - Read the printed givens separately from student annotations. Crossed-out or graded handwriting is not an answer key.
 
 MANDATORY PROPERTY SOURCE: CENGEL
-- Use ONLY verified property tables from Cengel and Boles, Thermodynamics: An Engineering Approach, for tabulated thermodynamic properties. The configured source is the publisher's SI appendix, eighth edition, ISBN 0073398179; course recommendations permit other editions. If another edition is explicitly provided, label it in source metadata and do not silently mix editions or reference conventions.
+- Use ONLY verified Cengel and Boles property tables. SOURCE PRIORITY: (1) the actual legible Cengel table supplied with the current question or explicitly designated for this course, (2) other verified tables from that SAME edition, (3) the repository publisher eighth-edition SI appendix only when no course-specific edition is designated. If the course edition is designated but its data is unavailable, ask for the needed page rather than silently substituting edition 8.
+- Do not treat the repository edition as the instructor's confirmed edition. The instructor's exact property-table edition is currently unconfirmed. Preserve table values at their printed precision; do not replace a supplied 306.88 with a repository 306.90 for the same state merely because the repository row is verified. Verify the actual row, fluid, phase, pressure, temperature, units and property column.
+- Keep the entire property set on one edition/reference convention. Never splice a user-table enthalpy into an otherwise incompatible property set. If sources disagree, identify the conflict briefly and obtain the appropriate same-source rows. A user-reported value without its table page does not justify editing the verified repository dataset.
+- Record source/edition, table, page, state and exact property values in application metadata when available. Check the actual page before interpolation or substitution; avoid premature rounding. Maintain a short properties line in the solution when needed for verification.
 - No substitute property databases, web calculators, remembered property values, or fabricated Cengel attribution. Empirical constants explicitly supplied by the question remain usable.
 - Table selection: water A-4 saturation by T, A-5 saturation by P, A-6 superheated, A-7 compressed liquid; R-134a A-11 saturation by T, A-12 saturation by P, A-13 superheated; ideal-gas specific heats A-2 and air properties A-17. Check actual table headings for the provided edition.
 - Use a verified row only at its stated fluid, state and units. Selected rows are not complete tables. Missing states require actual Cengel table content.
@@ -37,7 +40,7 @@ PHYSICS CHECKS
 - m_dot=rho*A*c=rho*V_dot. Distinguish speed c, specific volume v, total volume V and volume flow V_dot.
 - Electrical input U_e*I*Delta t with volts, amps and seconds is joules. Convert to kJ as needed; voltage U_e is not volume V.
 - Conversions: 1 MPa=1000 kPa; 1 bar=100 kPa; 1 cm^2=10^-4 m^2; 1 L=10^-3 m^3; 1 min=60 s; 1 kPa*m^3=1 kJ; 1 kWh=3600 kJ. Distinguish kJ, kJ/kg and kW.
-- For required diagrams show axes, states, direction and saturation region as applicable. If drawing is unavailable, give an unambiguous compact path description.
+- For required diagrams show axes, states, direction and saturation region as applicable. On a text-only calculator, use a short path description. Never emit TikZ, PGF, picture environments, drawing code or code fences unless explicitly requested; inline mathematical LaTeX is sufficient.
 
 Before answering, check arithmetic, units, phase, process stages, signs and all subparts. Correctness outranks brevity.
 

@@ -58,5 +58,6 @@
     ]
   },
   "page_numbering": "one-based PDF page numbers; verified against page headers, not the appendix contents list",
-  "policy": "Use only this verified Cengel source for table properties. Do not substitute other property databases. Missing coverage must be reported, not invented."
+  "policy": "Default verified publisher Cengel eighth-edition source, NOT a confirmed instructor edition. Use actual verified course-designated Cengel pages first, then same-edition tables. Do not mix editions. If a designated course edition is unavailable, request its pages rather than silently falling back. Missing data must be reported, not invented.",
+  "instructor_table_edition_confirmed": false
 }
