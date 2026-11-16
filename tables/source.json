@@ -1,0 +1,62 @@
+{
+  "book": "Thermodynamics: An Engineering Approach",
+  "authors": [
+    "Yunus A. Çengel",
+    "Michael A. Boles"
+  ],
+  "edition": 8,
+  "isbn": "0073398179",
+  "units": "SI",
+  "publisher_page": "https://glencoe.mheducation.com/sites/0073398179/information_center_view0/appendices.html",
+  "pdf_url": "https://glencoe.mheducation.com/sites/dl/free/0073398179/1042936/Appendix1_SIunits.pdf",
+  "pdf_sha256": "9129146ad73ad8376df22c1d26725be8499db19ca18f2f073815eb00e592a62c",
+  "retrieved_on": "2026-11-16",
+  "table_pages": {
+    "A-1": [
+      2
+    ],
+    "A-2": [
+      3,
+      4,
+      5
+    ],
+    "A-3": [
+      6,
+      7
+    ],
+    "A-4": [
+      8,
+      9
+    ],
+    "A-5": [
+      10,
+      11
+    ],
+    "A-6": [
+      12,
+      13,
+      14,
+      15
+    ],
+    "A-7": [
+      16
+    ],
+    "A-11": [
+      20,
+      21
+    ],
+    "A-12": [
+      22
+    ],
+    "A-13": [
+      23,
+      24
+    ],
+    "A-17": [
+      28,
+      29
+    ]
+  },
+  "page_numbering": "one-based PDF page numbers; verified against page headers, not the appendix contents list",
+  "policy": "Use only this verified Cengel source for table properties. Do not substitute other property databases. Missing coverage must be reported, not invented."
+}

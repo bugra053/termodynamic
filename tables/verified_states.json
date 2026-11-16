@@ -1,0 +1,129 @@
+{
+  "source_file": "tables/source.json",
+  "coverage": "Selected verified numerical facts only; not a complete table. No extrapolation. A state absent here requires reading the matching original Cengel table.",
+  "states": [
+    {
+      "id": "water_1MPa_400C",
+      "fluid": "water",
+      "phase": "superheated vapor",
+      "P_kPa": 1000,
+      "T_C": 400,
+      "v_m3_kg": 0.30661,
+      "u_kJ_kg": 2957.9,
+      "h_kJ_kg": 3264.5,
+      "table": "A-6",
+      "pdf_page": 13
+    },
+    {
+      "id": "water_sat_1MPa",
+      "fluid": "water",
+      "phase": "saturation endpoints",
+      "P_kPa": 1000,
+      "T_C": 179.88,
+      "v_f_m3_kg": 0.001127,
+      "v_g_m3_kg": 0.19436,
+      "u_f_kJ_kg": 761.39,
+      "u_fg_kJ_kg": 1821.4,
+      "u_g_kJ_kg": 2582.8,
+      "table": "A-5",
+      "pdf_page": 11
+    },
+    {
+      "id": "water_sat_150C",
+      "fluid": "water",
+      "phase": "saturation endpoints",
+      "T_C": 150,
+      "P_kPa": 476.16,
+      "v_f_m3_kg": 0.001091,
+      "v_g_m3_kg": 0.39248,
+      "u_f_kJ_kg": 631.66,
+      "u_fg_kJ_kg": 1927.4,
+      "u_g_kJ_kg": 2559.1,
+      "table": "A-4",
+      "pdf_page": 8
+    },
+    {
+      "id": "r134a_800kPa_120C",
+      "fluid": "R134a",
+      "phase": "superheated vapor",
+      "P_kPa": 800,
+      "T_C": 120,
+      "v_m3_kg": 0.037625,
+      "u_kJ_kg": 327.89,
+      "h_kJ_kg": 357.99,
+      "table": "A-13",
+      "pdf_page": 24
+    },
+    {
+      "id": "r134a_800kPa_70C",
+      "fluid": "R134a",
+      "phase": "superheated vapor",
+      "P_kPa": 800,
+      "T_C": 70,
+      "v_m3_kg": 0.03134,
+      "u_kJ_kg": 281.83,
+      "h_kJ_kg": 306.9,
+      "table": "A-13",
+      "pdf_page": 24
+    },
+    {
+      "id": "r134a_sat_160kPa",
+      "fluid": "R134a",
+      "phase": "saturation endpoints",
+      "P_kPa": 160,
+      "T_C": -15.6,
+      "v_f_m3_kg": 0.0007435,
+      "v_g_m3_kg": 0.12355,
+      "u_f_kJ_kg": 31.06,
+      "u_fg_kJ_kg": 190.31,
+      "u_g_kJ_kg": 221.37,
+      "table": "A-12",
+      "pdf_page": 22
+    },
+    {
+      "id": "r134a_sat_700kPa",
+      "fluid": "R134a",
+      "phase": "saturation endpoints",
+      "P_kPa": 700,
+      "T_C": 26.69,
+      "v_f_m3_kg": 0.0008331,
+      "v_g_m3_kg": 0.029392,
+      "u_f_kJ_kg": 88.24,
+      "u_fg_kJ_kg": 156.27,
+      "u_g_kJ_kg": 244.51,
+      "table": "A-12",
+      "pdf_page": 22
+    },
+    {
+      "id": "r134a_sat_14C",
+      "fluid": "R134a",
+      "phase": "saturation endpoints",
+      "T_C": 14,
+      "P_kPa": 473.19,
+      "h_f_kJ_kg": 70.94,
+      "table": "A-11",
+      "pdf_page": 20
+    },
+    {
+      "id": "r134a_sat_16C",
+      "fluid": "R134a",
+      "phase": "saturation endpoints",
+      "T_C": 16,
+      "P_kPa": 504.58,
+      "h_f_kJ_kg": 73.72,
+      "table": "A-11",
+      "pdf_page": 20
+    },
+    {
+      "id": "air_300K_specific_heats",
+      "fluid": "air",
+      "phase": "ideal gas",
+      "T_K": 300,
+      "R_kJ_kgK": 0.287,
+      "cp_kJ_kgK": 1.005,
+      "cv_kJ_kgK": 0.718,
+      "table": "A-2",
+      "pdf_page": 3
+    }
+  ]
+}

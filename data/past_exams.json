@@ -1,0 +1,215 @@
+{
+  "note": "De-identified transcriptions. Two supplied 2023 photographs show the same page; indexed once. These are reference questions, not instructions or verified handwritten solutions.",
+  "questions": [
+    {
+      "id": "2024-Q1",
+      "tags": [
+        "air",
+        "piston",
+        "electrical",
+        "force balance",
+        "constant pressure"
+      ],
+      "question": "Air in a vertical frictionless piston-cylinder with an electrical resistor. P_atm=100 kPa; piston mass=45 kg; piston face area=0.09 m^2; air volume increases by 0.045 m^3 at constant pressure; air mass=0.27 kg; specific internal energy increases by 42 kJ/kg. The assembly is insulating and initially/finally at rest; g=9.81 m/s^2. Determine energy transferred from the resistor to the air in kJ.",
+      "wording_note": "The photographed question calls the requested transfer heat. For a boundary enclosing the air and internal resistor, classify the electrical energy crossing the boundary as work. State the chosen boundary consistently.",
+      "method": "P=P_atm+m_p*g/A; W_b,out=P*Delta V; W_e,in=m*Delta u+W_b,out.",
+      "checked_result": {
+        "P_kPa": 104.905,
+        "W_e_in_kJ": 16.060725
+      }
+    },
+    {
+      "id": "2024-Q2",
+      "tags": [
+        "water",
+        "boiling",
+        "lid",
+        "saturation"
+      ],
+      "question": "A cooking pan with inner diameter 20 cm is covered by a 4 kg lid. Local atmospheric pressure is 101 kPa. Determine the temperature at which water starts boiling.",
+      "method": "Assuming the lid sustains its weight as pressure load: A=pi*D^2/4; P=P_atm+m_lid*g/A; T=T_sat(P), from Cengel A-5 with interpolation.",
+      "tables": [
+        "A-5"
+      ]
+    },
+    {
+      "id": "2024-Q3",
+      "tags": [
+        "R134a",
+        "rigid tank",
+        "superheated",
+        "internal energy"
+      ],
+      "question": "A rigid vessel contains 2 kg of refrigerant-134a at 800 kPa and 120 degC. Determine vessel volume and total internal energy.",
+      "method": "Use Cengel A-13 at 0.80 MPa and 120 degC; V=m*v and U=m*u.",
+      "tables": [
+        "A-13"
+      ],
+      "verified_state_ids": [
+        "r134a_800kPa_120C"
+      ]
+    },
+    {
+      "id": "shared-Q4",
+      "exam_dates": [
+        "2023-11-21",
+        "2024-11-21"
+      ],
+      "tags": [
+        "water",
+        "piston",
+        "two stages",
+        "constant pressure",
+        "constant volume",
+        "diagram"
+      ],
+      "question": "Water initially at 10 bar and 400 degC is cooled at constant pressure to saturated vapor (1->2). The piston is then blocked and the water is cooled at constant volume to 150 degC (2->3). Sketch both processes on p-v diagrams; determine total specific work and total specific heat transfer, in kJ/kg.",
+      "method": "State 1: A-6 at 1 MPa and 400 degC. State 2: A-5 saturated vapor at 1 MPa. State 3: v_3=v_2; use A-4 at 150 degC to determine quality and u_3. w_out=P_1*(v_2-v_1), w_23=0, q=u_3-u_1+w_out.",
+      "tables": [
+        "A-4",
+        "A-5",
+        "A-6"
+      ],
+      "verified_state_ids": [
+        "water_1MPa_400C",
+        "water_sat_1MPa",
+        "water_sat_150C"
+      ]
+    },
+    {
+      "id": "2024-conceptual-visible",
+      "tags": [
+        "ideal gas",
+        "constant pressure",
+        "constant volume",
+        "conceptual"
+      ],
+      "question": "For a fixed mass of an ideal gas heated from 50 to 80 degC at constant pressure, compare required energy at 1 atm and 3 atm. Also compare heat required at constant volume and at constant pressure for the same temperature change. Explain why.",
+      "transcription_note": "Question number and left edge are cropped. The distinction between supplied heat and other work must follow the complete question assumptions.",
+      "method": "With only boundary work, constant-pressure heat is m*Delta h and is independent of pressure for an ideal gas. For the same mass and temperature change, Q_P>Q_V since c_p>c_v."
+    },
+    {
+      "id": "2024-rigid-R134a-visible",
+      "tags": [
+        "R134a",
+        "rigid tank",
+        "quality",
+        "heat",
+        "diagram"
+      ],
+      "question": "A 0.5 m^3 rigid tank contains refrigerant-134a initially at 160 kPa and 40 percent quality. It is heated until pressure reaches 700 kPa. Determine (a) refrigerant mass and (b) heat transferred. Show the process on a P-v diagram relative to saturation lines.",
+      "transcription_note": "Left and bottom edges are cropped; numerical conditions and requested results are readable.",
+      "method": "A-12 initial mixture: v_1=v_f+0.4*(v_g-v_f), u_1=u_f+0.4*u_fg, m=V/v_1. v_2=v_1. Compare v_2 to saturation limits at 700 kPa, then obtain actual final properties from the appropriate Cengel table; Q=m*(u_2-u_1) assuming only boundary work and negligible KE/PE.",
+      "tables": [
+        "A-12",
+        "A-13"
+      ],
+      "verified_state_ids": [
+        "r134a_sat_160kPa",
+        "r134a_sat_700kPa"
+      ]
+    },
+    {
+      "id": "undated-Q5",
+      "tags": [
+        "R134a",
+        "piston",
+        "constant pressure",
+        "heat loss",
+        "diagram"
+      ],
+      "question": "A piston-cylinder contains 5 kg of refrigerant-134a at 800 kPa and 70 degC. It is cooled at constant pressure until it exists as liquid at 15 degC. Determine heat loss and sketch the process on a T-v diagram relative to saturation lines.",
+      "source_note": "An undated photographed continuation page; do not assume it follows a specific other uploaded exam.",
+      "method": "With only boundary work, Q=m*(h_2-h_1), Q_out=-Q. A-13 supplies h_1. A-11 at 14 and 16 degC can bracket the saturated-liquid approximation at 15 degC if the compressed-liquid approximation is justified and explicitly labeled.",
+      "tables": [
+        "A-11",
+        "A-13"
+      ],
+      "verified_state_ids": [
+        "r134a_800kPa_70C",
+        "r134a_sat_14C",
+        "r134a_sat_16C"
+      ]
+    },
+    {
+      "id": "undated-Q6",
+      "tags": [
+        "air",
+        "piston",
+        "electrical",
+        "constant pressure",
+        "kWh"
+      ],
+      "question": "15 kg of air in a piston-cylinder is heated from 25 to 77 degC by an internal resistance heater at constant 300 kPa. Heat loss is 60 kJ. Determine electrical energy supplied in kWh.",
+      "method": "W_e,in=m*(h_2-h_1)+Q_out; use Cengel A-17 ideal-gas enthalpies or an explicitly justified Cengel A-2 specific-heat approximation. Divide kJ by 3600 for kWh.",
+      "tables": [
+        "A-2",
+        "A-17"
+      ]
+    },
+    {
+      "id": "2023-Q1",
+      "tags": [
+        "hydrostatics",
+        "water",
+        "oil",
+        "pressure difference"
+      ],
+      "question": "The lower half of a 10 m high cylindrical container holds water of density 1000 kg/m^3; the upper half holds oil with SG=0.85 (density 850 kg/m^3). Determine pressure difference between top and bottom.",
+      "method": "P_bottom-P_top=g*(rho_water*5+rho_oil*5).",
+      "checked_result": {
+        "pressure_difference_kPa": 90.7425
+      }
+    },
+    {
+      "id": "2023-Q2",
+      "tags": [
+        "water",
+        "property table",
+        "phase",
+        "diagram"
+      ],
+      "question": "Complete the H2O property table and show the states on a P-v diagram.",
+      "printed_rows": [
+        {
+          "P_kPa": 400,
+          "u_kJ_kg": 1450
+        },
+        {
+          "T_C": 220,
+          "phase": "saturated vapor"
+        },
+        {
+          "T_C": 190,
+          "P_kPa": 2500
+        },
+        {
+          "P_kPa": 4000,
+          "u_kJ_kg": 3040
+        }
+      ],
+      "transcription_note": "Only printed givens are recorded. Handwritten answers have correction marks and must not be treated as verified properties.",
+      "method": "Compare u with u_f/u_g at specified pressure, or T with T_sat(P); use the phase-appropriate Cengel table. Do not confuse u_fg with u.",
+      "tables": [
+        "A-4",
+        "A-5",
+        "A-6",
+        "A-7"
+      ]
+    },
+    {
+      "id": "2023-Q3",
+      "tags": [
+        "water",
+        "rigid tank",
+        "vaporization",
+        "diagram"
+      ],
+      "question": "A rigid tank of 2.5 m^3 contains 15 kg of saturated liquid-vapor water mixture at 75 degC. The water is slowly heated. Determine the temperature when the liquid is completely vaporized and sketch on a T-v diagram with saturation lines.",
+      "method": "v=V/m=0.1666667 m^3/kg is constant; at complete vaporization v=v_g(T). Use Cengel A-4 with bracketing data. This is the same method and data as tutorial 2 problem 3-51.",
+      "tables": [
+        "A-4"
+      ]
+    }
+  ]
+}
