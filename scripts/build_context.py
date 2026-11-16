@@ -16,12 +16,13 @@ def read(path, repo=None, ref='main'):
     if not repo:
         return (ROOT / path).read_text(encoding='utf-8')
     token = os.environ.get('GITHUB_TOKEN') or os.environ.get('GH_TOKEN')
-    if not token:
-        raise ValueError('Private repository access requires GITHUB_TOKEN or GH_TOKEN in the backend environment.')
     if not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+', repo):
         raise ValueError('Invalid owner/repository.')
     url = f'https://api.github.com/repos/{repo}/contents/{quote(path, safe="/")}?ref={quote(ref, safe="")}'
-    request = Request(url, headers={'Authorization': f'Bearer {token}', 'Accept': 'application/vnd.github.raw+json', 'User-Agent': 'ENS202-context-loader'})
+    headers = {'Accept': 'application/vnd.github.raw+json', 'User-Agent': 'ENS202-context-loader'}
+    if token:
+        headers['Authorization'] = f'Bearer {token}'
+    request = Request(url, headers=headers)
     with urlopen(request, timeout=30) as response:
         return response.read().decode('utf-8')
 

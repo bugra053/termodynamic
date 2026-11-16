@@ -11,7 +11,7 @@ Kısa çözüm formatı, ders örnekleri, çıkmış soru transkripsiyonları ve
 - `sources/`: Kullanıcının verdiği dört orijinal tutorial PDF'si. Dosyalar görüntü tabanlıdır; şekil ve ayrıntılar için sayfa görüntüleri gerekir.
 - `tables/source.json`: Çengel & Boles, 8. baskı SI eki için resmî yayınevi bağlantısı, dosya özeti ve doğrulanmış tablo sayfa dizini.
 - `tables/verified_states.json`: Bazı çıkmış sorular için orijinal tabloların ilgili satırlarından doğrulanan 10 durum/özellik kaydı. Eksiksiz tablo değildir.
-- `scripts/build_context.py`: Yerel dosyalardan veya özel GitHub reposunun raw içerik yanıtından modele verilecek JSON'u hazırlar.
+- `scripts/build_context.py`: Yerel dosyalardan veya GitHub reposunun raw içerik yanıtından modele verilecek JSON'u hazırlar.
 - `scripts/fetch_cengel.py`: Resmî Çengel ekini yerel önbelleğe indirir ve istenen tablonun gerçek sayfalarını görüntüye çevirebilir.
 
 ## Çengel şartı
@@ -44,20 +44,28 @@ Model isteğinde:
 
 Betik bir modele API çağrısı yapmaz. Model sağlayıcısı ve mevcut uygulama kodu bu repo içinde yapılandırılmamıştır.
 
-## GitHub raw içerik erişimi
+## 7-Cal Custom Prompt alanına ekleme
 
-Repo **private** tutulur. İsimsiz `raw.githubusercontent.com` istekleri bu nedenle çalışmaz. Backend, depoda yalnızca okuma yetkisi olan token ile GitHub Contents API'nin **raw** yanıtını alabilir. Tokenı uygulamanın istemci koduna veya repoya yazma.
+Repo public; raw bağlantılar için giriş veya token gerekmez.
+
+- **Yalnızca talimatlar:** [system_prompt.txt raw](https://raw.githubusercontent.com/bugra053/termodynamic/main/system_prompt.txt).
+- **Talimat + ders yöntemleri + çıkmışlar + seçili Çengel verileri tek metin:** [calculator_prompt.txt raw](https://raw.githubusercontent.com/bugra053/termodynamic/main/calculator_prompt.txt).
+
+Create Custom Prompt ekranında Title alanına `ENS202` yaz. Yukarıdaki raw dosyalardan birini aç; dosyanın **metninin tamamını** kopyalayıp Content alanındaki eski metnin yerine yapıştır ve kaydet. İçerik alanına yalnızca URL yazmak dosyayı otomatik olarak modele vermez. Tek metin sürümü uzundur; platform bir uzunluk hatası verirse yalnızca system_prompt.txt kullan ve kaynakları PDF yükleme özelliğiyle sağla. Platformdaki prompt uzunluk sınırı burada doğrulanmadı.
+
+7-Cal'in resmî [sürüm notları](https://www.7-cal.com/full-patch-notes), AI Models bölümünde AI için PDF yüklemeyi ve dosyayı Active seçmeyi açıklıyor. Bu alan, cihazda dosya saklayan Documents alanından farklı olabilir. Güncel sınır olarak 5 PDF, toplam 100 sayfa veya 10 MB belirtiliyor. Dört tutorial toplam 22 sayfa; resmî Çengel SI eki 50 sayfa. Dosyaları kullandırmak için ilgili PDF'leri AI dosyası olarak yükleyip etkinleştir. Bu repo 7-Cal hesabını otomatik yapılandırmaz.
+
+Tek metin dosyası bütün şekilleri ve tam Çengel tablolarını içermez. Gerekli özellik veri kümesinde yoksa gerçek tablo sayfası sağlanmalıdır. [Resmî Çengel SI eki](https://glencoe.mheducation.com/sites/dl/free/0073398179/1042936/Appendix1_SIunits.pdf) indirilebilir; tam PDF repoda yeniden yayımlanmıyor.
+
+## Backend'den raw içerik erişimi
 
 ```sh
-# GITHUB_TOKEN veya GH_TOKEN backend ortamında tanımlı olmalı.
 python3 scripts/build_context.py --repo bugra053/termodynamic --ref main --question 'Water at 10 bar and 400 C, cooled then piston blocked' --example shared-Q4 > context.json
 ```
 
-Tek dosyanın yetkili raw uç noktası:
+Public dosyalar `https://raw.githubusercontent.com/bugra053/termodynamic/main/` altından okunabilir. Betik GitHub Contents API'nin raw yanıtını kullanır; public repo için token zorunlu değildir. İsteğe bağlı GITHUB_TOKEN veya GH_TOKEN API kotasını yükseltmek veya private erişim için backend ortamında tutulabilir; istemci koduna yazılmamalıdır.
 
-`https://api.github.com/repos/bugra053/termodynamic/contents/system_prompt.txt?ref=main`
-
-İstek başlıkları: `Accept: application/vnd.github.raw+json` ve backend'de `Authorization: Bearer <token>`. Bir URL'yi sistem promptuna koymak erişim veya otomatik güncelleme sağlamaz. İstek anında backend dosyayı indirmelidir. Sabit bir sürüm için `--ref` alanına commit SHA'sı verilebilir.
+Bir URL'yi sistem promptuna koymak erişim veya otomatik güncelleme sağlamaz. İstek anında backend dosyayı indirmelidir. Sabit bir sürüm için `--ref` alanına commit SHA'sı verilebilir.
 
 Örnek seçimi basit kelime eşleştirmesidir. Tam soru görüntülerinde önce metin okunmalı veya çıkarılmalı. Kesin eşleştirme için `--example` kullanılabilir; üretim uygulamasında daha güçlü arama eklenebilir.
 
