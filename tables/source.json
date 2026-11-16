@@ -1,16 +1,20 @@
 {
-  "book": "Thermodynamics: An Engineering Approach",
-  "authors": [
-    "Yunus A. Çengel",
-    "Michael A. Boles"
-  ],
-  "edition": 8,
-  "isbn": "0073398179",
+  "book": "Cengel thermodynamic property tables, SI appendix",
+  "source_type": "instructor-designated user-supplied PDF",
+  "source_id": "instructor_property_tables_2300e9f82972",
+  "original_filename": "Property_tables (1).pdf",
+  "edition": null,
+  "edition_note": "Edition number is not explicitly identified in the supplied appendix; use this exact file rather than guessing an edition.",
   "units": "SI",
-  "publisher_page": "https://glencoe.mheducation.com/sites/0073398179/information_center_view0/appendices.html",
-  "pdf_url": "https://glencoe.mheducation.com/sites/dl/free/0073398179/1042936/Appendix1_SIunits.pdf",
-  "pdf_sha256": "9129146ad73ad8376df22c1d26725be8499db19ca18f2f073815eb00e592a62c",
-  "retrieved_on": "2026-11-16",
+  "pdf_path": "tables/Property_tables.pdf",
+  "pdf_url": "https://raw.githubusercontent.com/bugra053/termodynamic/main/tables/Property_tables.pdf",
+  "pdf_sha256": "2300e9f82972c0d772f8697529ba6c173e6fb323e280093d601bd9d48e73dd7c",
+  "page_count": 50,
+  "printed_page_range": [
+    907,
+    956
+  ],
+  "received_on": "2026-11-16",
   "table_pages": {
     "A-1": [
       2
@@ -57,7 +61,22 @@
       29
     ]
   },
-  "page_numbering": "one-based PDF page numbers; verified against page headers, not the appendix contents list",
-  "policy": "Default verified publisher Cengel eighth-edition source, NOT a confirmed instructor edition. Use actual verified course-designated Cengel pages first, then same-edition tables. Do not mix editions. If a designated course edition is unavailable, request its pages rather than silently falling back. Missing data must be reported, not invented.",
-  "instructor_table_edition_confirmed": false
+  "table_text_urls": {
+    "A-1": "https://raw.githubusercontent.com/bugra053/termodynamic/main/tables/text/A-1.txt",
+    "A-2": "https://raw.githubusercontent.com/bugra053/termodynamic/main/tables/text/A-2.txt",
+    "A-3": "https://raw.githubusercontent.com/bugra053/termodynamic/main/tables/text/A-3.txt",
+    "A-4": "https://raw.githubusercontent.com/bugra053/termodynamic/main/tables/text/A-4.txt",
+    "A-5": "https://raw.githubusercontent.com/bugra053/termodynamic/main/tables/text/A-5.txt",
+    "A-6": "https://raw.githubusercontent.com/bugra053/termodynamic/main/tables/text/A-6.txt",
+    "A-7": "https://raw.githubusercontent.com/bugra053/termodynamic/main/tables/text/A-7.txt",
+    "A-11": "https://raw.githubusercontent.com/bugra053/termodynamic/main/tables/text/A-11.txt",
+    "A-12": "https://raw.githubusercontent.com/bugra053/termodynamic/main/tables/text/A-12.txt",
+    "A-13": "https://raw.githubusercontent.com/bugra053/termodynamic/main/tables/text/A-13.txt",
+    "A-17": "https://raw.githubusercontent.com/bugra053/termodynamic/main/tables/text/A-17.txt"
+  },
+  "page_numbering": "one-based PDF pages; printed page number = PDF page + 906",
+  "instructor_table_file_confirmed": true,
+  "instructor_table_edition_confirmed": false,
+  "policy": "Use this exact instructor-designated PDF and its verified rows exclusively for table properties. No publisher-edition fallback, remembered values or other databases. If required data cannot be read, request the relevant page or leave a symbolic result.",
+  "text_extraction_note": "Raw text preserves page boundaries and column headings. Known PDF glyph (cid:4) normalized to minus and (cid:2) to equals after visual checks; unresolved glyphs are retained. Validate ambiguous columns, signs and decimals against original PDF."
 }

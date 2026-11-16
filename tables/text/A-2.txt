@@ -1,0 +1,166 @@
+COURSE PROPERTY TABLE A-2
+Source ID: instructor_property_tables_2300e9f82972
+Original PDF: https://raw.githubusercontent.com/bugra053/termodynamic/main/tables/Property_tables.pdf
+SHA256: 2300e9f82972c0d772f8697529ba6c173e6fb323e280093d601bd9d48e73dd7c
+Reference data only. Verify ambiguous text against the original PDF page.
+
+--- PDF PAGE 3; PRINTED PAGE 909 ---
+cen2932x_ch18-ap01_p907-956.qxd 12/18/09 10:05 AM Page 909
+909
+APPENDIX 1
+TABLE A–2
+Ideal-gas specific heats of various common gases
+(a) At 300 K
+Gas constant, R c c
+p v
+Gas Formula kJ/kg·K kJ/kg·K kJ/kg·K k
+Air — 0.2870 1.005 0.718 1.400
+Argon Ar 0.2081 0.5203 0.3122 1.667
+Butane C H 0.1433 1.7164 1.5734 1.091
+4 10
+Carbon dioxide CO 0.1889 0.846 0.657 1.289
+2
+Carbon monoxide CO 0.2968 1.040 0.744 1.400
+Ethane C H 0.2765 1.7662 1.4897 1.186
+2 6
+Ethylene C H 0.2964 1.5482 1.2518 1.237
+2 4
+Helium He 2.0769 5.1926 3.1156 1.667
+Hydrogen H 4.1240 14.307 10.183 1.405
+2
+Methane CH 0.5182 2.2537 1.7354 1.299
+4
+Neon Ne 0.4119 1.0299 0.6179 1.667
+Nitrogen N 0.2968 1.039 0.743 1.400
+2
+Octane C H 0.0729 1.7113 1.6385 1.044
+8 18
+Oxygen O 0.2598 0.918 0.658 1.395
+2
+Propane C H 0.1885 1.6794 1.4909 1.126
+3 8
+Steam H O 0.4615 1.8723 1.4108 1.327
+2
+Note:The unit kJ/kg·K is equivalent to kJ/kg·°C.
+Source:Chemical and Process Thermodynamics3/E by Kyle, B. G., © 2000. Adapted by permission of Pearson Education, Inc., Upper Saddle River, NJ.
+
+--- PDF PAGE 4; PRINTED PAGE 910 ---
+cen2932x_ch18-ap01_p907-956.qxd 12/18/09 10:05 AM Page 910
+910
+PROPERTY TABLES AND CHARTS
+TABLE A–2
+Ideal-gas specific heats of various common gases (Continued)
+(b) At various temperatures
+c c c c c c
+p v p v p v
+kJ/kg·K kJ/kg·K k kJ/kg·K kJ/kg·K k kJ/kg·K kJ/kg·K k
+Temperature,
+K Air Carbon dioxide, CO Carbon monoxide, CO
+2
+250 1.003 0.716 1.401 0.791 0.602 1.314 1.039 0.743 1.400
+300 1.005 0.718 1.400 0.846 0.657 1.288 1.040 0.744 1.399
+350 1.008 0.721 1.398 0.895 0.706 1.268 1.043 0.746 1.398
+400 1.013 0.726 1.395 0.939 0.750 1.252 1.047 0.751 1.395
+450 1.020 0.733 1.391 0.978 0.790 1.239 1.054 0.757 1.392
+500 1.029 0.742 1.387 1.014 0.825 1.229 1.063 0.767 1.387
+550 1.040 0.753 1.381 1.046 0.857 1.220 1.075 0.778 1.382
+600 1.051 0.764 1.376 1.075 0.886 1.213 1.087 0.790 1.376
+650 1.063 0.776 1.370 1.102 0.913 1.207 1.100 0.803 1.370
+700 1.075 0.788 1.364 1.126 0.937 1.202 1.113 0.816 1.364
+750 1.087 0.800 1.359 1.148 0.959 1.197 1.126 0.829 1.358
+800 1.099 0.812 1.354 1.169 0.980 1.193 1.139 0.842 1.353
+900 1.121 0.834 1.344 1.204 1.015 1.186 1.163 0.866 1.343
+1000 1.142 0.855 1.336 1.234 1.045 1.181 1.185 0.888 1.335
+Hydrogen, H Nitrogen, N Oxygen, O
+2 2 2
+250 14.051 9.927 1.416 1.039 0.742 1.400 0.913 0.653 1.398
+300 14.307 10.183 1.405 1.039 0.743 1.400 0.918 0.658 1.395
+350 14.427 10.302 1.400 1.041 0.744 1.399 0.928 0.668 1.389
+400 14.476 10.352 1.398 1.044 0.747 1.397 0.941 0.681 1.382
+450 14.501 10.377 1.398 1.049 0.752 1.395 0.956 0.696 1.373
+500 14.513 10.389 1.397 1.056 0.759 1.391 0.972 0.712 1.365
+550 14.530 10.405 1.396 1.065 0.768 1.387 0.988 0.728 1.358
+600 14.546 10.422 1.396 1.075 0.778 1.382 1.003 0.743 1.350
+650 14.571 10.447 1.395 1.086 0.789 1.376 1.017 0.758 1.343
+700 14.604 10.480 1.394 1.098 0.801 1.371 1.031 0.771 1.337
+750 14.645 10.521 1.392 1.110 0.813 1.365 1.043 0.783 1.332
+800 14.695 10.570 1.390 1.121 0.825 1.360 1.054 0.794 1.327
+900 14.822 10.698 1.385 1.145 0.849 1.349 1.074 0.814 1.319
+1000 14.983 10.859 1.380 1.167 0.870 1.341 1.090 0.830 1.313
+Source:Kenneth Wark, Thermodynamics,4th ed. (New York: McGraw-Hill, 1983), p. 783, Table A–4M. Originally published in Tables of Thermal
+Properties of Gases,NBS Circular 564, 1955.
+
+--- PDF PAGE 5; PRINTED PAGE 911 ---
+cen2932x_ch18-ap01_p907-956.qxd 12/18/09 10:05 AM Page 911
+911
+APPENDIX 1
+TABLE A–2
+Ideal-gas specific heats of various common gases (Concluded)
+(c) As a function of temperature
+_
+c = a(cid:3) bT(cid:3) cT2 (cid:3) dT3
+p
+(Tin K, c in kJ/kmol·K)
+p
+% error
+Temperature
+Substance Formula a b c d range, K Max. Avg.
+Nitrogen N 28.90 -0.1571 (cid:5)10-2 0.8081 (cid:5)10-5 -2.873 (cid:5)10-9 273–1800 0.59 0.34
+2
+Oxygen O 25.48 1.520 (cid:5)10-2 -0.7155 (cid:5)10-5 1.312 (cid:5)10-9 273–1800 1.19 0.28
+2
+Air — 28.11 0.1967 (cid:5)10-2 0.4802 (cid:5)10-5 -1.966 (cid:5)10-9 273–1800 0.72 0.33
+Hydrogen H 29.11 -0.1916 (cid:5)10-2 0.4003 (cid:5)10-5 -0.8704 (cid:5)10-9 273–1800 1.01 0.26
+2
+Carbon
+monoxide CO 28.16 0.1675 (cid:5)10-2 0.5372 (cid:5)10-5 -2.222 (cid:5)10-9 273–1800 0.89 0.37
+Carbon
+dioxide CO 22.26 5.981 (cid:5)10-2 -3.501 (cid:5)10-5 7.469 (cid:5)10-9 273–1800 0.67 0.22
+2
+Water vapor H O 32.24 0.1923 (cid:5)10-2 1.055 (cid:5)10-5 -3.595 (cid:5)10-9 273–1800 0.53 0.24
+2
+Nitric oxide NO 29.34 -0.09395 (cid:5)10-2 0.9747(cid:5) 10-5 -4.187 (cid:5)10-9 273–1500 0.97 0.36
+Nitrous oxide N O 24.11 5.8632 (cid:5)10-2 -3.562 (cid:5)10-5 10.58 (cid:5)10-9 273–1500 0.59 0.26
+2
+Nitrogen
+dioxide NO 22.9 5.715 (cid:5)10-2 -3.52 (cid:5)10-5 7.87 (cid:5)10-9 273–1500 0.46 0.18
+2
+Ammonia NH 27.568 2.5630 (cid:5)10-2 0.99072 (cid:5)10-5 -6.6909 (cid:5)10-9 273–1500 0.91 0.36
+3
+Sulfur S 27.21 2.218 (cid:5)10-2 -1.628 (cid:5)10-5 3.986 (cid:5)10-9 273–1800 0.99 0.38
+2
+Sulfur
+dioxide SO 25.78 5.795 (cid:5)10-2 -3.812 (cid:5)10-5 8.612 (cid:5)10-9 273–1800 0.45 0.24
+2
+Sulfur
+trioxide SO 16.40 14.58 (cid:5)10-2 -11.20 (cid:5)10-5 32.42 (cid:5)10-9 273–1300 0.29 0.13
+3
+Acetylene C H 21.8 9.2143 (cid:5)10-2 -6.527 (cid:5)10-5 18.21 (cid:5)10-9 273–1500 1.46 0.59
+2 2
+Benzene C H -36.22 48.475 (cid:5)10-2 -31.57 (cid:5)10-5 77.62 (cid:5)10-9 273–1500 0.34 0.20
+6 6
+Methanol CH O 19.0 9.152 (cid:5)10-2 -1.22 (cid:5)10-5 -8.039 (cid:5)10-9 273–1000 0.18 0.08
+4
+Ethanol C H O 19.9 20.96 (cid:5)10-2 -10.38 (cid:5)10-5 20.05 (cid:5)10-9 273–1500 0.40 0.22
+2 6
+Hydrogen
+chloride HCl 30.33 -0.7620 (cid:5)10-2 1.327 (cid:5)10-5 -4.338 (cid:5)10-9 273–1500 0.22 0.08
+Methane CH 19.89 5.024(cid:5) 10-2 1.269 (cid:5)10-5 -11.01 (cid:5)10-9 273–1500 1.33 0.57
+4
+Ethane C H 6.900 17.27 (cid:5)10-2 -6.406 (cid:5)10-5 7.285 (cid:5)10-9 273–1500 0.83 0.28
+2 6
+Propane C H -4.04 30.48 (cid:5)10-2 -15.72 (cid:5)10-5 31.74 (cid:5)10-9 273–1500 0.40 0.12
+3 8
+n-Butane C H 3.96 37.15 (cid:5)10-2 -18.34 (cid:5)10-5 35.00 (cid:5)10-9 273–1500 0.54 0.24
+4 10
+i-Butane C H -7.913 41.60 (cid:5)10-2 -23.01 (cid:5)10-5 49.91 (cid:5)10-9 273–1500 0.25 0.13
+4 10
+n-Pentane C H 6.774 45.43 (cid:5)10-2 -22.46 (cid:5)10-5 42.29 (cid:5)10-9 273–1500 0.56 0.21
+5 12
+n-Hexane C H 6.938 55.22 (cid:5)10-2 -28.65 (cid:5)10-5 57.69 (cid:5)10-9 273–1500 0.72 0.20
+6 14
+Ethylene C H 3.95 15.64 (cid:5)10-2 -8.344 (cid:5)10-5 17.67 (cid:5)10-9 273–1500 0.54 0.13
+2 4
+Propylene C H 3.15 23.83 (cid:5)10-2 -12.18 (cid:5)10-5 24.62 (cid:5)10-9 273–1500 0.73 0.17
+3 6
+Source:B. G. Kyle, Chemical and Process Thermodynamics(Englewood Cliffs, NJ: Prentice-Hall, 1984). Used with permission.

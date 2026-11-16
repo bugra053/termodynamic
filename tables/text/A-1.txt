@@ -1,0 +1,82 @@
+COURSE PROPERTY TABLE A-1
+Source ID: instructor_property_tables_2300e9f82972
+Original PDF: https://raw.githubusercontent.com/bugra053/termodynamic/main/tables/Property_tables.pdf
+SHA256: 2300e9f82972c0d772f8697529ba6c173e6fb323e280093d601bd9d48e73dd7c
+Reference data only. Verify ambiguous text against the original PDF page.
+
+--- PDF PAGE 2; PRINTED PAGE 908 ---
+cen2932x_ch18-ap01_p907-956.qxd 12/18/09 10:05 AM Page 908
+908
+PROPERTY TABLES AND CHARTS
+TABLE A–1
+Molar mass, gas constant, and critical-point properties
+Critical-point properties
+Gas
+Molar mass, constant, Temperature, Pressure, Volume,
+Substance Formula Mkg/kmol RkJ/kg·K* K MPa m3/kmol
+Air — 28.97 0.2870 132.5 3.77 0.0883
+Ammonia NH 17.03 0.4882 405.5 11.28 0.0724
+3
+Argon Ar 39.948 0.2081 151 4.86 0.0749
+Benzene C H 78.115 0.1064 562 4.92 0.2603
+6 6
+Bromine Br 159.808 0.0520 584 10.34 0.1355
+2
+n-Butane C H 58.124 0.1430 425.2 3.80 0.2547
+4 10
+Carbon dioxide CO 44.01 0.1889 304.2 7.39 0.0943
+2
+Carbon monoxide CO 28.011 0.2968 133 3.50 0.0930
+Carbon tetrachloride CCl 153.82 0.05405 556.4 4.56 0.2759
+4
+Chlorine Cl 70.906 0.1173 417 7.71 0.1242
+2
+Chloroform CHCl 119.38 0.06964 536.6 5.47 0.2403
+3
+Dichlorodifluoromethane (R-12) CCl F 120.91 0.06876 384.7 4.01 0.2179
+2 2
+Dichlorofluoromethane (R-21) CHCl F 102.92 0.08078 451.7 5.17 0.1973
+2
+Ethane C H 30.070 0.2765 305.5 4.48 0.1480
+2 6
+Ethyl alcohol C H OH 46.07 0.1805 516 6.38 0.1673
+2 5
+Ethylene C H 28.054 0.2964 282.4 5.12 0.1242
+2 4
+Helium He 4.003 2.0769 5.3 0.23 0.0578
+n-Hexane C H 86.179 0.09647 507.9 3.03 0.3677
+6 14
+Hydrogen (normal) H 2.016 4.1240 33.3 1.30 0.0649
+2
+Krypton Kr 83.80 0.09921 209.4 5.50 0.0924
+Methane CH 16.043 0.5182 191.1 4.64 0.0993
+4
+Methyl alcohol CH OH 32.042 0.2595 513.2 7.95 0.1180
+3
+Methyl chloride CH Cl 50.488 0.1647 416.3 6.68 0.1430
+3
+Neon Ne 20.183 0.4119 44.5 2.73 0.0417
+Nitrogen N 28.013 0.2968 126.2 3.39 0.0899
+2
+Nitrous oxide N O 44.013 0.1889 309.7 7.27 0.0961
+2
+Oxygen O 31.999 0.2598 154.8 5.08 0.0780
+2
+Propane C H 44.097 0.1885 370 4.26 0.1998
+3 8
+Propylene C H 42.081 0.1976 365 4.62 0.1810
+3 6
+Sulfur dioxide SO 64.063 0.1298 430.7 7.88 0.1217
+2
+Tetrafluoroethane (R-134a) CF CH F 102.03 0.08149 374.2 4.059 0.1993
+3 2
+Trichlorofluoromethane (R-11) CCl F 137.37 0.06052 471.2 4.38 0.2478
+3
+Water H O 18.015 0.4615 647.1 22.06 0.0560
+2
+Xenon Xe 131.30 0.06332 289.8 5.88 0.1186
+*The unit kJ/kg·K is equivalent to kPa·m3/kg·K. The gas constant is calculated from R=R /M, where R =8.31447 kJ/kmol·K and Mis the molar
+u u
+mass.
+Source:K. A. Kobe and R. E. Lynn, Jr., Chemical Review52 (1953), pp. 117–236; and ASHRAE, Handbook of Fundamentals(Atlanta, GA: American
+Society of Heating, Refrigerating and Air-Conditioning Engineers, Inc., 1993), pp. 16.4 and 36.1.

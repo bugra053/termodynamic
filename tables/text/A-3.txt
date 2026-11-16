@@ -1,0 +1,119 @@
+COURSE PROPERTY TABLE A-3
+Source ID: instructor_property_tables_2300e9f82972
+Original PDF: https://raw.githubusercontent.com/bugra053/termodynamic/main/tables/Property_tables.pdf
+SHA256: 2300e9f82972c0d772f8697529ba6c173e6fb323e280093d601bd9d48e73dd7c
+Reference data only. Verify ambiguous text against the original PDF page.
+
+--- PDF PAGE 6; PRINTED PAGE 912 ---
+cen2932x_ch18-ap01_p907-956.qxd 12/18/09 10:05 AM Page 912
+912
+PROPERTY TABLES AND CHARTS
+TABLE A–3
+Properties of common liquids, solids, and foods
+(a) Liquids
+Boiling data at 1 atm Freezing data Liquid properties
+Normal Latent heat of Latent heat Specific
+boiling vaporization Freezing of fusion Temperature, Density heat
+Substance point, °C h , kJ/kg point, °C h, kJ/kg °C r, kg/m3 c, kJ/kg·K
+fg if p
+Ammonia -33.3 1357 -77.7 322.4 -33.3 682 4.43
+-20 665 4.52
+0 639 4.60
+25 602 4.80
+Argon -185.9 161.6 -189.3 28 -185.6 1394 1.14
+Benzene 80.2 394 5.5 126 20 879 1.72
+Brine (20% sodium
+chloride by mass) 103.9 — -17.4 — 20 1150 3.11
+n-Butane -0.5 385.2 -138.5 80.3 -0.5 601 2.31
+Carbon dioxide -78.4* 230.5 (at 0°C) -56.6 0 298 0.59
+Ethanol 78.2 838.3 -114.2 109 25 783 2.46
+Ethyl alcohol 78.6 855 -156 108 20 789 2.84
+Ethylene glycol 198.1 800.1 -10.8 181.1 20 1109 2.84
+Glycerine 179.9 974 18.9 200.6 20 1261 2.32
+Helium -268.9 22.8 — — -268.9 146.2 22.8
+Hydrogen -252.8 445.7 -259.2 59.5 -252.8 70.7 10.0
+Isobutane -11.7 367.1 -160 105.7 -11.7 593.8 2.28
+Kerosene 204–293 251 -24.9 — 20 820 2.00
+Mercury 356.7 294.7 -38.9 11.4 25 13,560 0.139
+Methane -161.5 510.4 -182.2 58.4 -161.5 423 3.49
+-100 301 5.79
+Methanol 64.5 1100 -97.7 99.2 25 787 2.55
+Nitrogen -195.8 198.6 -210 25.3 -195.8 809 2.06
+-160 596 2.97
+Octane 124.8 306.3 -57.5 180.7 20 703 2.10
+Oil (light) 25 910 1.80
+Oxygen -183 212.7 -218.8 13.7 -183 1141 1.71
+Petroleum — 230–384 20 640 2.0
+Propane -42.1 427.8 -187.7 80.0 -42.1 581 2.25
+0 529 2.53
+50 449 3.13
+Refrigerant-134a -26.1 217.0 -96.6 — -50 1443 1.23
+-26.1 1374 1.27
+0 1295 1.34
+25 1207 1.43
+Water 100 2257 0.0 333.7 0 1000 4.22
+25 997 4.18
+50 988 4.18
+75 975 4.19
+100 958 4.22
+*Sublimation temperature. (At pressures below the triple-point pressure of 518 kPa, carbon dioxide exists as a solid or gas. Also, the freezing-point temperature
+of carbon dioxide is the triple-point temperature of -56.5°C.)
+
+--- PDF PAGE 7; PRINTED PAGE 913 ---
+cen2932x_ch18-ap01_p907-956.qxd 12/18/09 10:05 AM Page 913
+913
+APPENDIX 1
+TABLE A–3
+Properties of common liquids, solids, and foods (Concluded)
+(b) Solids (values are for room temperature unless indicated otherwise)
+Density, Specific heat, Density, Specific heat,
+Substance rkg/m3 c kJ/kg·K Substance rkg/m3 c kJ/kg·K
+p p
+Metals Nonmetals
+Aluminum Asphalt 2110 0.920
+200 K 0.797 Brick, common 1922 0.79
+250 K 0.859 Brick, fireclay (500°C) 2300 0.960
+300 K 2,700 0.902 Concrete 2300 0.653
+350 K 0.929 Clay 1000 0.920
+400 K 0.949 Diamond 2420 0.616
+450 K 0.973 Glass, window 2700 0.800
+500 K 0.997 Glass, pyrex 2230 0.840
+Bronze (76% Cu, 2% Zn, 8,280 0.400 Graphite 2500 0.711
+2% Al) Granite 2700 1.017
+Brass, yellow (65% Cu, 8,310 0.400 Gypsum or plaster board 800 1.09
+35% Zn) Ice
+Copper 200 K 1.56
+-173°C 0.254 220 K 1.71
+-100°C 0.342 240 K 1.86
+-50°C 0.367 260 K 2.01
+0°C 0.381 273 K 921 2.11
+27°C 8,900 0.386 Limestone 1650 0.909
+100°C 0.393 Marble 2600 0.880
+200°C 0.403 Plywood (Douglas Fir) 545 1.21
+Iron 7,840 0.45 Rubber (soft) 1100 1.840
+Lead 11,310 0.128 Rubber (hard) 1150 2.009
+Magnesium 1,730 1.000 Sand 1520 0.800
+Nickel 8,890 0.440 Stone 1500 0.800
+Silver 10,470 0.235 Woods, hard (maple, oak, etc.) 721 1.26
+Steel, mild 7,830 0.500 Woods, soft (fir, pine, etc.) 513 1.38
+Tungsten 19,400 0.130
+(c) Foods
+Specific heat, Specific heat,
+kJ/kg·K Latent kJ/kg·K Latent
+Water heat of Water heat of
+content, Freezing Above Below fusion, content, Freezing Above Below fusion,
+Food % (mass) point, °C freezing freezing kJ/kg Food % (mass) point, °C freezing freezing kJ/kg
+Apples 84 -1.1 3.65 1.90 281 Lettuce 95 -0.2 4.02 2.04 317
+Bananas 75 -0.8 3.35 1.78 251 Milk, whole 88 -0.6 3.79 1.95 294
+Beef round 67 — 3.08 1.68 224 Oranges 87 -0.8 3.75 1.94 291
+Broccoli 90 -0.6 3.86 1.97 301 Potatoes 78 -0.6 3.45 1.82 261
+Butter 16 — — 1.04 53 Salmon fish 64 -2.2 2.98 1.65 214
+Cheese, swiss 39 -10.0 2.15 1.33 130 Shrimp 83 -2.2 3.62 1.89 277
+Cherries 80 -1.8 3.52 1.85 267 Spinach 93 -0.3 3.96 2.01 311
+Chicken 74 -2.8 3.32 1.77 247 Strawberries 90 -0.8 3.86 1.97 301
+Corn, sweet 74 -0.6 3.32 1.77 247 Tomatoes, ripe 94 -0.5 3.99 2.02 314
+Eggs, whole 74 -0.6 3.32 1.77 247 Turkey 64 — 2.98 1.65 214
+Ice cream 63 -5.6 2.95 1.63 210 Watermelon 93 -0.4 3.96 2.01 311
+Source:Values are obtained from various handbooks and other sources or are calculated. Water content and freezing-point data of foods are from ASHRAE,
+Handbook of Fundamentals,SI version (Atlanta, GA: American Society of Heating, Refrigerating and Air-Conditioning Engineers, Inc., 1993), Chapter 30,
+Table1. Freezing point is the temperature at which freezing starts for fruits and vegetables, and the average freezing temperature for other foods.

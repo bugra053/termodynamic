@@ -66,9 +66,10 @@ def build(args):
             'methods': selected_methods,
             'verified_cengel_states': facts,
             'property_coverage': states['coverage'],
+            'table_text_urls': {t: source['table_text_urls'][t] for t in sorted(tables)},
             'table_source': source,
             'required_table_pages': {t: source['table_pages'][t] for t in sorted(tables)},
-            'retrieval_note': 'Simple lexical selection, not semantic search. Verify relevance. Original table URLs are provenance, not proof the model has read those pages. Use scripts/fetch_cengel.py to retrieve/render missing properties and attach the actual pages through your model provider.'
+            'retrieval_note': 'Simple lexical selection, not semantic search. Verify relevance. Use only the instructor-designated PDF. Table text URLs and PDF URLs are not proof the model has read their content. Use scripts/fetch_cengel.py to retrieve/render missing properties and attach the actual pages through your model provider.'
         }
     }
 

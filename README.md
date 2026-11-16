@@ -1,83 +1,39 @@
-# ENS202 thermodynamics study references
+# ENS202 — short solutions and exact course tables
 
-Kısa çözüm formatı, ders örnekleri, çıkmış soru transkripsiyonları ve **yalnızca doğrulanmış Çengel tablolarını** kullanma kuralı.
+## 7-Cal'e yapıştırılacak prompt
 
-## İçerik
+[online_prompt.txt — raw](https://raw.githubusercontent.com/bugra053/termodynamic/main/online_prompt.txt) dosyasını aç, metnin tamamını kopyala ve **Create Custom Prompt → Content** alanındaki eski metnin yerine yapıştır. Başlık `ENS202`; online tarama açık olmalı.
 
-- `system_prompt.txt`: İngilizce; denklem → sayısal yerleştirme → sonuç. Her alt soru için genellikle 2–4 kısa satır; gerekli süreç veya tablo adımları korunur.
-- `course_reference.md`: Dört tutorial'dan yöntem özeti ve sayfa dizini. Tam transkripsiyon değildir.
-- `data/past_exams.json`: 2023, 2024 ve tarihi görünmeyen devam sayfasındaki okunabilir sorular; 11 kayıt. Aynı görünen 2023 sayfası tekilleştirilmiştir. Adlar ve öğrenci numaraları alınmamıştır. Öğrenci cevapları çözüm anahtarı sayılmaz.
-- `data/recommended_problems.json`: Bölüm 1–4 önerilen soru numaraları ve C işaretli kavramsal sorular bilgisi. Soru numaraları, soruların tam metninin mevcut olduğu anlamına gelmez.
-- `sources/`: Kullanıcının verdiği dört orijinal tutorial PDF'si. Dosyalar görüntü tabanlıdır; şekil ve ayrıntılar için sayfa görüntüleri gerekir.
-- `tables/source.json`: Çengel & Boles, 8. baskı SI eki için resmî yayınevi bağlantısı, dosya özeti ve doğrulanmış tablo sayfa dizini.
-- `tables/verified_states.json`: Bazı çıkmış sorular için orijinal tabloların ilgili satırlarından doğrulanan 10 durum/özellik kaydı. Eksiksiz tablo değildir.
-- `scripts/build_context.py`: Yerel dosyalardan veya GitHub reposunun raw içerik yanıtından modele verilecek JSON'u hazırlar.
-- `scripts/fetch_cengel.py`: Resmî Çengel ekini yerel önbelleğe indirir ve istenen tablonun gerçek sayfalarını görüntüye çevirebilir.
+Çıktı talimatı: sayısal sorularda yazılı açıklama olmadan **denklem → sayısal yerleştirme → kutulu sonuç**. Genellikle alt soru başına iki kısa satır; zorunlu tablo/süreç adımları için ek satır. TikZ ve uzun çizim kodu yok. Kaynak okuma işlemleri çıktıda anlatılmaz. Platformun kendi eklediği alıntı veya bağlantı gösterimleri prompt dışında uygulanabilir.
 
-## Çengel şartı
+## Hocanın gerçek tablosu
 
-Resmî kaynak: [McGraw Hill — Çengel & Boles, 8/e, Appendices](https://glencoe.mheducation.com/sites/0073398179/information_center_view0/appendices.html).
+Kullanıcının hocaya ait olduğunu belirttiği `Property_tables (1).pdf`, değiştirilmeden [tables/Property_tables.pdf](tables/Property_tables.pdf) olarak eklendi. **50 sayfa**, basılı sayfalar **907–956**. Baskı numarası dosyada açıkça doğrulanmadığı için tahmin edilmedi. Özellik değerlerinde başka baskıya geçiş yok.
 
-Ders duyurusu beşinci baskıyı adlandırıyor ve başka baskılara izin veriyor. Bu repoda doğrulanmış resmî kaynak sekizinci baskıdır. Baskılar arası soru numaraları ve bazı özellik değerleri değişebilir; eşleştirme tam soru metnine ve gerçek tablo başlığına göre yapılmalı.
+- [source.json](tables/source.json): kaynak kimliği, SHA256, tablo/sayfa dizini ve raw metin bağlantıları.
+- [verified_states.json](tables/verified_states.json): bu dosyadan kontrol edilmiş seçili durumlar.
+- [tables/text/](tables/text/): ENS202 için ilgili 11 tablonun sayfa sınırları ve başlıkları korunmuş metin çıkarımı. Bazı özel karakterler bozulabileceğinden şüpheli sütun/işaret için orijinal PDF kullanılır.
 
-Tablo isteyen çözümde yalnızca doğrulanmış Çengel satırları kullanılmalı. Başka veritabanı, çevrimiçi hesaplayıcı veya model hafızasındaki sayılar Çengel verisi diye sunulmamalı. Gerekli durum bu küçük veri kümesinde yoksa orijinal Çengel sayfası okunmalı. Veri yoksa sonuç uydurulmaz.
+Kontrol edilen örnek: A-13, PDF sayfa 24 / basılı 930, R-134a, 800 kPa ve 70°C için **h=306.88 kJ/kg**. Aynı dosyanın A-11 tablosunda h_f(14°C)=70.95 ve h_f(16°C)=73.73; 15°C için sıvı yaklaşımıyla h yaklaşık 72.34 kJ/kg. Eski 8. baskıdaki 306.90/70.94/73.72 değerleriyle karıştırılmaz.
 
-Yayınevinin ekinin tam kopyası repoya eklenmemiştir; yardımcı betik doğrudan resmî kaynaktan indirir. Dosya `.cache/` altında kalır ve Git'e gönderilmez. Ham PDF metin çıkarımında eksi işaretleri ve sütunlar bozulabilir; gerekli durumda orijinal tablo görüntüsünü modele ekle. Genel ders özetindeki münferit eski örnek değerleri, yeni bir durum için bu doğrulanmış tablo kaynağının yerine geçmez.
+PDF'yi [raw indir](https://raw.githubusercontent.com/bugra053/termodynamic/main/tables/Property_tables.pdf). Doğrudan AI dosyası olarak kullanmak için 7-Cal'de **AI Models → Upload File to AI** üzerinden yükle ve **Active** seç. [Resmî özellik açıklaması](https://www.7-cal.com/full-patch-notes). Bir URL yazmak dosyanın gerçekten okunduğunu garanti etmez.
 
-## Yerel kullanım
+## Diğer kaynaklar
 
-Python 3 yeterlidir. Tablo sayfalarını görüntüye çevirmek için ayrıca Poppler içindeki `pdftoppm` gerekir.
+- `sources/`: dört orijinal tutorial PDF'si; toplam 22 sayfa, görüntü tabanlı.
+- `course_reference.md`: öğretmenin yöntemini izleyen konu/soru dizini; eski örneklerin özellik sayıları yerine gerçek ders tablosu kullanılır.
+- `data/past_exams.json`: öğrenci bilgileri çıkarılmış 11 çıkmış/örnek soru kaydı.
+- `data/recommended_problems.json`: önerilen soru numaraları. Soru numarası tek başına tam soru metni değildir.
+- `system_prompt.txt`: kısa temel sistem talimatı.
+- `calculator_prompt.txt`: talimat + ders yöntemleri + çıkmışlar + doğrulanmış tablo satırları tek metin.
+
+## Backend araçları
 
 ```sh
-python3 scripts/build_context.py --question 'R134a at 800 kPa and 120 C: find volume and internal energy' --example 2024-Q3 > context.json
+python3 scripts/build_context.py --repo bugra053/termodynamic --question 'R134a at 800 kPa and 70 C' --example undated-Q5 > context.json
 python3 scripts/fetch_cengel.py --table A-13 --render
 ```
 
-İlk komut `system_prompt`, `question` ve `course_context` alanları üretir. İkinci komut gerçek Çengel PDF'sini ve ilgili tablo sayfalarının yerel görüntü yollarını verir.
+İlk betik sağlayıcıdan bağımsız model girdisi hazırlar; public raw erişim için token gerekmez. İkinci betik repodaki birebir ders PDF'sini SHA256 ile kontrol eder ve ilgili sayfaları görüntüye çevirir; görüntü için Poppler `pdftoppm` gerekir. İkisi de model API'sine çağrı yapmaz. Örnek araması basit kelime eşleştirmesidir; `--example` kesin kayıt seçer.
 
-Model isteğinde:
-
-1. `system_prompt` içeriğini sağlayıcının sistem/talimat alanına koy.
-2. `course_context` içeriğini referans veri, `question` içeriğini güncel soru olarak gönder.
-3. Doğrulanmış satırlar yeterli değilse ilgili gerçek tablo görüntülerini sağlayıcının görüntü/dosya alanıyla ekle. Dosya yolu veya URL yazmak görüntü eklemek değildir.
-4. Modelin kısa yanıtını göster; kullanılan kaynak, tablo ve sayfaları istersen backend'de ayrı kaydet.
-
-Betik bir modele API çağrısı yapmaz. Model sağlayıcısı ve mevcut uygulama kodu bu repo içinde yapılandırılmamıştır.
-
-## Tablo baskısı ve hassasiyet
-
-Hocanın kullandığı tam tablo baskısı henüz doğrulanmadı. Repodaki 8. baskı değerleri kaynaklarına göre korunur; örneğin A-13, PDF sayfa 24, 800 kPa ve 70 °C için h=306.90 kJ/kg yazıyor. Kullanıcı kendi tablosunda 306.88 gördüğünü bildirdi; ilgili sayfa gelmeden bu değerin hangi baskıdan olduğu doğrulanmış sayılmaz. Soruyla verilen veya ders için belirtilen gerçek Çengel tablosu önceliklidir. Bütün özellikleri aynı kaynak/baskıdan kullan; bir değeri değiştirip kalanını farklı baskıdan alma.
-
-## 7-Cal Custom Prompt alanına ekleme
-
-Repo public; raw bağlantılar için giriş veya token gerekmez.
-
-**Online tarama için güncel prompt:** [online_prompt.txt raw](https://raw.githubusercontent.com/bugra053/termodynamic/main/online_prompt.txt). Metnin tamamını Content alanına yapıştır; online tarama açık olmalı. Bu sürüm bulanık soru eşleştirmesini ve dersin gerçek Çengel tablosuna öncelik verilmesini içerir.
-
-- **Yalnızca talimatlar:** [system_prompt.txt raw](https://raw.githubusercontent.com/bugra053/termodynamic/main/system_prompt.txt).
-- **Talimat + ders yöntemleri + çıkmışlar + seçili Çengel verileri tek metin:** [calculator_prompt.txt raw](https://raw.githubusercontent.com/bugra053/termodynamic/main/calculator_prompt.txt).
-
-Create Custom Prompt ekranında Title alanına `ENS202` yaz. Yukarıdaki raw dosyalardan birini aç; dosyanın **metninin tamamını** kopyalayıp Content alanındaki eski metnin yerine yapıştır ve kaydet. İçerik alanına yalnızca URL yazmak dosyayı otomatik olarak modele vermez. Tek metin sürümü uzundur; platform bir uzunluk hatası verirse yalnızca system_prompt.txt kullan ve kaynakları PDF yükleme özelliğiyle sağla. Platformdaki prompt uzunluk sınırı burada doğrulanmadı.
-
-7-Cal'in resmî [sürüm notları](https://www.7-cal.com/full-patch-notes), AI Models bölümünde AI için PDF yüklemeyi ve dosyayı Active seçmeyi açıklıyor. Bu alan, cihazda dosya saklayan Documents alanından farklı olabilir. Güncel sınır olarak 5 PDF, toplam 100 sayfa veya 10 MB belirtiliyor. Dört tutorial toplam 22 sayfa; resmî Çengel SI eki 50 sayfa. Dosyaları kullandırmak için ilgili PDF'leri AI dosyası olarak yükleyip etkinleştir. Bu repo 7-Cal hesabını otomatik yapılandırmaz.
-
-Tek metin dosyası bütün şekilleri ve tam Çengel tablolarını içermez. Gerekli özellik veri kümesinde yoksa gerçek tablo sayfası sağlanmalıdır. [Resmî Çengel SI eki](https://glencoe.mheducation.com/sites/dl/free/0073398179/1042936/Appendix1_SIunits.pdf) indirilebilir; tam PDF repoda yeniden yayımlanmıyor.
-
-## Backend'den raw içerik erişimi
-
-```sh
-python3 scripts/build_context.py --repo bugra053/termodynamic --ref main --question 'Water at 10 bar and 400 C, cooled then piston blocked' --example shared-Q4 > context.json
-```
-
-Public dosyalar `https://raw.githubusercontent.com/bugra053/termodynamic/main/` altından okunabilir. Betik GitHub Contents API'nin raw yanıtını kullanır; public repo için token zorunlu değildir. İsteğe bağlı GITHUB_TOKEN veya GH_TOKEN API kotasını yükseltmek veya private erişim için backend ortamında tutulabilir; istemci koduna yazılmamalıdır.
-
-Bir URL'yi sistem promptuna koymak erişim veya otomatik güncelleme sağlamaz. İstek anında backend dosyayı indirmelidir. Sabit bir sürüm için `--ref` alanına commit SHA'sı verilebilir.
-
-Örnek seçimi basit kelime eşleştirmesidir. Tam soru görüntülerinde önce metin okunmalı veya çıkarılmalı. Kesin eşleştirme için `--example` kullanılabilir; üretim uygulamasında daha güçlü arama eklenebilir.
-
-## Kaynak kontrolleri
-
-- Tutorial 4'ün ilk üç örneği tutorial 3'ün ilk üç örneğini tekrarlar; bağımsız kanıt sayılmaz.
-- İlk eski el yazısı görüntüsü tutorial 3'ün 4–6(b) sorusuna aitse 27.6 kJ hesabı doğru süreç yoluna uymaz: sabit basınçta durdurucuya kadar hareket + sabit hacimde soğumada sıkıştırma işi girdisi 36.79 kJ'dür. Görüntünün soru metni görünmediği için eşleşme koşulludur.
-- Sabit hacimde sıfır olan sınır işidir; elektrik veya karıştırıcı işi sıfır olmak zorunda değildir.
-- Çözümler kısa tutulur; fiziksel doğruluk, tablo doğrulaması ve istenen bütün alt sorular uzunluk hedefinden önce gelir.
+Görüntü bulanıksa yalnızca kesin kaynak eşleşmesinden veri tamamlanır. Kritik sayı okunamıyorsa tahmin edilmez. Hocanın tablosunu izlemek ve çıktıyı kısaltmak prompt kurallarıdır; gerçek model yanıtını çalışma sorularıyla kontrol etmek gerekir.
