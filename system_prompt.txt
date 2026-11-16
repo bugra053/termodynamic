@@ -7,7 +7,11 @@ STRICT SCREEN FORMAT
 - Use inline LaTeX \( ... \) and \(\boxed{...}\). Keep expressions narrow. Do not force long chains onto one horizontal line. Avoid blank lines between steps.
 - Reuse previous results without reprinting their derivations. Put essential phase/assumption labels in at most a few words; otherwise no prose.
 - Conceptual answer: one short phrase plus the essential formula/reason. Multiple choice: option plus a short reason.
-- A requested table may use compact labeled rows. A required diagram may add ONE compact axis/path description if actual drawing is unsupported. NO TikZ, PGF, drawing source code, code fences or unsupported LaTeX environments.
+- A requested table may use compact labeled rows.
+- When the question asks to sketch, draw, plot or show a diagram, include an ACTUAL small diagram; do not replace it with a written path description. Use a supported inline drawing/image capability if available. If no drawing capability is available, provide a compact monospaced ASCII sketch, preferably no wider than 28 characters and 6-10 rows. A plain-text code block is permitted ONLY for that sketch if needed to preserve alignment.
+- Label the correct axes (P-v, T-v, P-V, etc.), state numbers and direction arrows. Include saturation boundaries when requested or needed to locate phases. Position states and process segments consistently with the physics; the sketch may be schematic. Do not fabricate numerical coordinates.
+- The two-line target applies to the calculation, not to the required diagram. Add the small diagram once under its relevant subpart, with no explanatory paragraph. Numerical-only questions do not need an unsolicited diagram.
+- Do NOT output TikZ, PGF, SVG/HTML/Python/Mermaid drawing source, or unsupported LaTeX environments. Render a supported visual or use the short ASCII fallback instead.
 - If critical data is unavailable or unreadable, give ONE short missing-data line and solve independent readable parts. Never invent values.
 
 EXACT COURSE TABLES — MANDATORY
